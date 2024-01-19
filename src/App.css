@@ -1,3 +1,40 @@
+:root {
+    --background-color-header: #1A0B2E;
+    --box-shadow-header: #000;
+    --background-card-one: #130428;
+    --background-card-two:  #251043;
+    --background-card-tree: #38126D;
+    --background-card-fourt: #261045;
+    --background-card-five: #190634;
+    --color-boton-card: #693B93;
+    --color-boton-card-hover: #A362FF;
+    --body-color: #11071F;
+    --text-primary-color: #fff;
+    --color-pd: #9857D3;
+    --color-ep: #CCD6F6;
+}
+
+.dark {
+    --body-color: #fff;
+    --text-primary-color: #11071F;
+    --background-color-header: #f6f7e4;
+    --box-shadow-header: #ffffff;
+    --background-card-one: #e0dada;
+    --background-card-two: #e0dada;
+    --background-card-tree: #e0dada;
+    --background-card-fourt: #e0dada;
+    --background-card-five: #e0dada;
+    --color-boton-card: #0f0f0f;
+    --color-boton-card-hover: #3022ff;
+    --color-pd: #38016b;
+    --color-ep: #1414e9;
+}
+
+.mainContainer{
+    background-color: var(--body-color);
+    color: var(--text-primary-color);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +52,9 @@ header {
     background-color: #1A0B2E;
     z-index: 100;
     box-shadow: 0 0 10px #000;
+    background-color: var(--background-color-header);
+    z-index: 100;
+    box-shadow: 0 0 10px var(--box-shadow-header);
     display: flex;
     justify-content: center;
 }
@@ -26,7 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--text-primary-color);
     padding: 0 40px 0 40px;
 }
 
@@ -50,6 +90,7 @@ header {
         left: 0;
         width: 100%;
         background-color: #1A0B2E;
+        /* background-color: #1A0B2E; */
         height: calc(max-content - 60px);
         padding: 20px 0 10px;
         z-index: 100;
@@ -88,10 +129,15 @@ header {
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    color: white;
+    color: var(--text-primary-color);
 }
 
 .nav__buttons {
+    color: var(--text-primary-color);
+}
+
+.nav__buttons {
+    color: var(--text-primary-color);
     display: flex;
     align-items: center;
     /* gap: 1rem; */
@@ -124,6 +170,7 @@ i {
     gap: 2rem;
     border-radius: 15px;
     background: linear-gradient(110deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%);
+    background: linear-gradient(110deg, var(--background-card-one) 19.95%, var(--background-card-two)  67.64%, var(--background-card-tree) 107.08%, var(--background-card-fourt) 156.61%, var(--background-card-five) 183.21%);
     box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -136,6 +183,15 @@ i {
 
 .btn__card:hover {
     background: #A362FF;
+    border: 1px solid var(--color-boton-card);
+    padding: .5rem;
+    border-radius: 15px;
+    background: var(--color-boton-card);
+    color: #fff;
+}
+
+.btn__card:hover {
+    background: var(--color-boton-card-hover);
 }
 
 .card__container {
@@ -271,6 +327,8 @@ i {
 .cardFeatured {
     background: #2C1250;
     color: #CCD6F6;
+    background: var(--background-card-two);
+    color: var(--text-primary-color);
     max-width: 100%;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -282,6 +340,8 @@ i {
 .cardFeatured2 {
     background: #2C1250;
     color: #CCD6F6;
+    background: var(--background-card-two);
+    color: var(--text-primary-color);
     max-width: 100%;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -514,4 +574,13 @@ i {
 
 .bxl-netlify:hover{
     transform: scale(1.4);
+}
+
+.pd-style{
+    color: var(--color-pd);
+    
+}
+
+.ep-style{
+    color: var(--color-ep);
 }

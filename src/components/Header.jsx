@@ -1,5 +1,5 @@
 
-const Header = () => {
+const Header = ({changeMode, darkMode}) => {
 
     const showMenu = ()=>{
         document.querySelector(".nav__menu").classList.toggle("show__menu")
@@ -13,7 +13,10 @@ const Header = () => {
         <header className="header">
             <nav className="nav container">
                 <a className="nav__logo">
-                    <img src="/Logo.png" alt="" className="logo--icon"/>
+                    {/* <img src="/Logo.png" alt="" className="logo--icon"/> */}
+                    {
+                        darkMode ? <img src="/Logo.png" alt="" className="logo--icon"/> : <img src="/react.png" alt="" className="logo--icon"/>
+                    }
                 </a>
                 {/* nav__menu */}
                 <div className="nav__menu" onClick={closeMenu}>
@@ -24,6 +27,7 @@ const Header = () => {
                     {/* nav__list */}
                     <ul className="nav__list">
                         {/* nav__link */}
+                        <i onClick={changeMode} className={`nav__link transition-colors bx ${darkMode ? "bx-sun": "bx-moon dark"}`} ></i>
                         <li><a href="#SectionHome" className="nav__link transition-colors">Home</a></li>
                         <li><a href="#SectionAboutMe" className="nav__link transition-colors">About</a></li>
                         <li><a href="#SectionWorkExperience" className="nav__link transition-colors">Lab</a></li>

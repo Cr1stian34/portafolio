@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import AboutMe from './components/AboutMe'
 import FeaturedProject from './components/FeaturedProject'
@@ -8,10 +9,15 @@ import Programing from './components/Programing'
 import WorkExperience from './components/WorkExperience'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true)
+
+  const changeMode = () => {
+    setDarkMode(!darkMode)
+  }
 
   return (
-    <main className='bg-[#11071F] text-[#fff] mainContainer'>
-      <Header />
+    <main className={`mainContainer ${darkMode ? "" : "dark"} transition-colors`}>
+      <Header changeMode={changeMode} darkMode={darkMode}/>
       <Profile />
       <AboutMe />
       <WorkExperience />
