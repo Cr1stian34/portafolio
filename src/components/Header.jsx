@@ -13,7 +13,6 @@ const Header = ({changeMode, darkMode}) => {
         <header className="header">
             <nav className="nav container">
                 <a className="nav__logo">
-                    {/* <img src="/Logo.png" alt="" className="logo--icon"/> */}
                     {
                         darkMode ? <img src="/Logo.png" alt="" className="logo--icon"/> : <img src="/react.png" alt="" className="logo--icon"/>
                     }
@@ -28,9 +27,11 @@ const Header = ({changeMode, darkMode}) => {
                     <ul className="nav__list">
                         {/* nav__link */}
                         <i onClick={changeMode} className={`nav__link transition-colors bx ${darkMode ? "bx-sun": "bx-moon dark"}`} ></i>
-                        <li><a href="#SectionHome" className="nav__link transition-colors">Home</a></li>
-                        <li><a href="#SectionAboutMe" className="nav__link transition-colors">About</a></li>
-                        <li><a href="#SectionWorkExperience" className="nav__link transition-colors">Lab</a></li>
+                        <li><a href="#SectionHome" className="nav__link transition-colors"><i className='bx bx-home-alt-2'></i></a></li>
+                        <li><a href="#SectionAboutMe" className="nav__link transition-colors"><i className='bx bx-user'></i></a></li>
+                        <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-code-alt'></i></a></li>
+                        <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-folder-open'></i></a></li>
+                        <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-conversation'></i></a></li>
                     </ul>
                 </div>
                 <div className="nav__buttons">

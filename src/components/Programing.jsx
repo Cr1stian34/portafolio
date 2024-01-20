@@ -4,8 +4,8 @@ const Programing = () => {
     return (
         <section className="flex flex-col items-center mb-[8rem]">
             <div className="p-2 mb-6">
-                <h3 className="text-center text-[24px]">I'm currently looking to join a <span className="text-[#A362FF]">cross-functional</span>  team</h3>
-                <p className="text-center text-[15px]">that values improving people's lives through accessible design </p>
+                <h3 className="text-center text-[24px]">Me gusta trabajar en un equipo <span className="text-[#A362FF]">multifuncional</span></h3>
+                <p className="text-center text-[15px]">Estas son las tecnologías que estoy utilizando actualmente y las cuales conozco</p>
             </div>
             <article className="articleContainer">
                 {/* iconContainer es la clases con grid */}
@@ -42,27 +42,27 @@ const Programing = () => {
 
                     <div className="flex gap-2 justify-center">
                         <div className="iconPrograming">
-                            <img src="/editorPhoto.png" alt="" />
+                            <img src="/php.png" alt="" />
                         </div>
 
                         <div className="iconPrograming">
-                            <img src="/next.png" alt="" />
+                            <img src="/laravel.png" alt="" />
                         </div>
 
                         <div className="iconPrograming">
-                            <img src="/g.png" alt="" />
+                            <img src="/postgres.png" alt="" />
                         </div>
 
                         <div className="iconPrograming">
-                            <img src="/ai.png" alt="" />
-                        </div>
-
-                        <div className="expres">
-                            <img src="/expres.png" alt="" />
+                            <img src="/tailwind.png" alt="" />
                         </div>
 
                         <div className="iconPrograming">
-                            <img src="/mongoDB.png" alt="" />
+                            <img src="/git.png" alt="" />
+                        </div>
+
+                        <div className="iconPrograming">
+                            <img src="/html.png" alt="" />
                         </div>
                     </div>
 
