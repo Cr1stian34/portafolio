@@ -94,6 +94,11 @@ header {
     margin-top: 20px;
 }
 
+.btnCv:hover{
+    color: var(--box-shadow-header);
+    background-color: var(--text-primary-color);
+}
+
 .reactGira{
     position: absolute;
     top: -10%;
@@ -170,6 +175,7 @@ header {
     }
 
     .about{
+        /* border: 1px solid green; */
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -217,16 +223,40 @@ i {
 .card {
     /* border: 3px solid green; */
     height: auto;
-    display: flex;
-    gap: 2rem;
     border-radius: 15px;
-    background: linear-gradient(110deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%);
     background: linear-gradient(110deg, var(--background-card-one) 19.95%, var(--background-card-two)  67.64%, var(--background-card-tree) 107.08%, var(--background-card-fourt) 156.61%, var(--background-card-five) 183.21%);
     box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
 }
 
+.card__text{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover .card__text{
+    opacity: 1;
+    transition: .5s;
+}
+
+.tecnologias{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 10px;
+}
+
+.iconProyect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
 .btn__card {
-    border: 1px solid #693B93;
     padding: .5rem;
     border-radius: 15px;
     background: #693B93;
@@ -234,9 +264,6 @@ i {
 
 .btn__card:hover {
     background: #A362FF;
-    border: 1px solid var(--color-boton-card);
-    padding: .5rem;
-    border-radius: 15px;
     background: var(--color-boton-card);
     color: #fff;
 }

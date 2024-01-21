@@ -29,8 +29,8 @@ const Header = ({changeMode, darkMode}) => {
                         <i onClick={changeMode} className={`nav__link transition-colors bx ${darkMode ? "bx-sun": "bx-moon dark"}`} ></i>
                         <li><a href="#SectionHome" className="nav__link transition-colors"><i className='bx bx-home-alt-2'></i></a></li>
                         <li><a href="#SectionAboutMe" className="nav__link transition-colors"><i className='bx bx-user'></i></a></li>
-                        <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-code-alt'></i></a></li>
                         <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-folder-open'></i></a></li>
+                        <li><a href="#SectionSkills" className="nav__link transition-colors"><i className='bx bx-code-alt'></i></a></li>
                         <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-conversation'></i></a></li>
                     </ul>
                 </div>

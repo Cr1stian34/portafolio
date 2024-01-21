@@ -15,7 +15,7 @@ const Profile = () => {
                     <p className="underline text-[17px]">Un diseñador que</p>
                     <h2 className="text-[20px]">Juzga un libro por su <span className="text-[#7127BA]">portada</span>...</h2>
                     <p className="text-[11px]">Porque si la portada no te impresiona qué más puede</p>
-                    <button className="btnCv">Descargar CV</button>
+                    <button className="btnCv transition-colors">Descargar CV</button>
                 </div>
             </div>
 

@@ -1,13 +1,19 @@
 
 const AboutMe = () => {
     return (
-        <section id="SectionAboutMe" className="pt-[100px] max-w-[1200px] mx-auto">
-            <div className="about">
-                <h2 className="text-[45px]">I'm a Software Engenieer.|</h2>
-                <p className="text-[21px] pb-[5rem]">Currently, I'm a Software Engineer at <span className="text-[#1877F2]">Facebook</span>,</p>
-                <p className="text-[22px]">A self-taught UI/UX designer, functioning in the industry for 3+ years now.
-                    I make meaningful and delightful digital products that create an equilibrium
-                    between user needs and business goals.</p>
+        <section id="SectionAboutMe" className="py-[100px] mt-10 max-w-[1000px] mx-auto text-center">
+            <div className="about max-w-[100%]">
+                <h2 className="text-[30px] ">Mas Sobre mi</h2>
+                <h2 className="text-[45px]">Ingeniero en Software</h2>
+                <p className="text-[21px] pb-[5rem]">Mi fuerte es el desarrollo de <span className="text-[#A362FF]"> aplicaciones web</span></p>
+                <p className="text-[16px]">
+                Me apasiona el desarrollo web, tanto el front-end como el back-end. Dedicado a 
+                aprender diseños web y poder implementarlos, así como nuevas tecnologías que me 
+                ayuden a poder crear aplicaciones web más dinámicas. Me considero un joven 
+                responsable, respetuoso, dedicado a mis labores y sobre todo apasionado por aprender, 
+                en el ámbito del desarrollo de aplicaciones web y todo lo que comprende en el ámbito 
+                de la programación.
+                    </p>
             </div>
 
         </section>

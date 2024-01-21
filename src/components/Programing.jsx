@@ -2,10 +2,10 @@ import { BgImgWorl, Ellipse1, Ellipse2, Ellipse3, Icono1, Icono10, Icono11, Icon
 
 const Programing = () => {
     return (
-        <section className="flex flex-col items-center mb-[8rem]">
+        <section id="SectionSkills" className="flex flex-col items-center mb-[8rem] pt-[5rem]">
             <div className="p-2 mb-6">
-                <h3 className="text-center text-[24px]">Me gusta trabajar en un equipo <span className="text-[#A362FF]">multifuncional</span></h3>
-                <p className="text-center text-[15px]">Estas son las tecnologías que estoy utilizando actualmente y las cuales conozco</p>
+                <h3 className="text-center text-[35px]">Mis Habilidades</h3>
+                <p className="text-center text-[15px]">Estas son las <span className="text-[#A362FF]">tecnologías</span> que estoy utilizando actualmente y las cuales conozco</p>
             </div>
             <article className="articleContainer">
                 {/* iconContainer es la clases con grid */}
