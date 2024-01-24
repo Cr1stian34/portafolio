@@ -11,7 +11,7 @@ const Profile = () => {
                     <div className="reactGira animationRotateReact"><img src="/react.png" alt="" /></div>
                 </div>
                 <div className="z-10 pfResponsive">
-                    <h2 className="text-[30px]">Ingeniero en Software / <span className="text-[#7127BA]">Desarrollador Web Full Stack</span></h2>
+                    <h2 className="text-[30px]">Ingeniero de Software / <span className="text-[#7127BA]">Desarrollador Web Full Stack</span></h2>
                     <hr className=" my-4"/>
                     <p className="underline text-[17px]">Un diseñador que</p>
                     <h2 className="text-[20px]">Juzga un libro por su <span className="text-[#7127BA]">portada</span>...</h2>
