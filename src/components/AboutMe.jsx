@@ -4,7 +4,7 @@ const AboutMe = () => {
         <section id="SectionAboutMe" className="py-[100px] mt-10 max-w-[1000px] mx-auto text-center">
             <div className="about max-w-[100%]">
                 <h2 className="text-[30px] ">Mas Sobre mi</h2>
-                <h2 className="text-[45px]">Ingeniero en Software</h2>
+                <h2 className="text-[45px]">Ingeniero de Software</h2>
                 <p className="text-[21px] pb-[5rem]">Mi fuerte es el desarrollo de <span className="text-[#A362FF]"> aplicaciones web</span></p>
                 <p className="text-[16px]">
                 Me apasiona el desarrollo web, tanto el front-end como el back-end. Dedicado a 
