@@ -15,10 +15,10 @@
 }
 
 .dark {
-    --body-color: #fff;
+    --body-color: #e5e7eb;
     --text-primary-color: #11071F;
-    --background-color-header: #f6f7e4;
-    --box-shadow-header: #ffffff;
+    --background-color-header: #dbdbdb;
+    --box-shadow-header: #e5e7eb;
     --background-card-one: #e0dada;
     --background-card-two: #e0dada;
     --background-card-tree: #e0dada;
@@ -78,6 +78,24 @@ header {
 .logo--icon {
     width: 2rem;
     height: 2rem;
+}
+
+.progress{
+    position: fixed;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    background: yellow;
+    height: 1em;
+    z-index: 10;
+
+    animation: progress-grow auto linear;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes progress-grow {
+    0%{ width: 0%}
+    100%{width: 100%}
 }
 
 /* estilos del boton del cv */
@@ -225,7 +243,43 @@ i {
     height: auto;
     border-radius: 15px;
     background: linear-gradient(110deg, var(--background-card-one) 19.95%, var(--background-card-two)  67.64%, var(--background-card-tree) 107.08%, var(--background-card-fourt) 156.61%, var(--background-card-five) 183.21%);
-    box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12); 
+}
+
+.card__container .card{
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+        translate: 30% 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+section .about{
+    animation: aboutMe linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes aboutMe {
+    from{
+        opacity: 0;
+        translate: -100% 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
 }
 
 .card__text{
@@ -394,32 +448,6 @@ i {
     -moz-box-shadow: 14px -15px 5px 0px rgba(43, 11, 58, 0.75);
 }
 
-.cardFeatured {
-    background: #2C1250;
-    color: #CCD6F6;
-    background: var(--background-card-two);
-    color: var(--text-primary-color);
-    max-width: 100%;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
-    border-radius: 0.75rem;
-}
-
-.cardFeatured2 {
-    background: #2C1250;
-    color: #CCD6F6;
-    background: var(--background-card-two);
-    color: var(--text-primary-color);
-    max-width: 100%;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
-    border-radius: 0.75rem;
-}
-
 /* featured Diseño mobil */
 .featured {
     /* border: 2px solid green; */
@@ -437,13 +465,6 @@ i {
     gap: 1rem;
     margin-top: 1.5rem;
     margin-left: 1.25rem;
-}
-
-.articleDos {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    margin-top: 2rem;
-    padding-top: 10rem;
 }
 
 hr {
@@ -496,14 +517,13 @@ hr {
         z-index: 0;
     }
 
-    .cardFeatured {
+    /* .cardFeatured {
         position: relative;
-        /* border: 2px solid green; */
         margin-top: 2rem;
         padding-top: 1rem;
         padding-right: 2rem;
         z-index: 1;
-    }
+    } */
 
     .feactured2 {
         /* visibility: visible; */
@@ -523,11 +543,11 @@ hr {
         justify-content: flex-end;
     }
 
-    .cardFeatured2 {
+    /* .cardFeatured2 {
         position: relative;
         padding-top: 1rem;
         max-width: 600px;
-    }
+    } */
 
     .imgDecoration2 {
         top: 10%;
@@ -557,7 +577,7 @@ hr {
 
     .btn--close {
         display: none;
-        border: 2px solid green;
+        /* border: 2px solid green; */
     }
 
     .nav__list {
@@ -664,4 +684,66 @@ hr {
 
 .ep-style{
     color: var(--color-ep);
+}
+
+.contactoForm{
+    /* border: 2px solid green; */
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--text-primary-color);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+
+.inputForm{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid var(--body-color);
+}
+
+.btnForm{
+    background-color: var(--background-color-header);
+    color: var(--text-primary-color);
+    padding: .75rem;
+    margin-bottom: .5rem;
+    border-radius: 20px;
+}
+
+.contactoForm{
+    animation: contactMe linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+}
+
+@keyframes contactMe {
+    from{
+        opacity: 0;
+        translate: 50% 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+article .contact{
+    animation: aboutMe linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
 }

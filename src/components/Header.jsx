@@ -31,7 +31,7 @@ const Header = ({changeMode, darkMode}) => {
                         <li><a href="#SectionAboutMe" className="nav__link transition-colors"><i className='bx bx-user'></i></a></li>
                         <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-folder-open'></i></a></li>
                         <li><a href="#SectionSkills" className="nav__link transition-colors"><i className='bx bx-code-alt'></i></a></li>
-                        <li><a href="#SectionWorkExperience" className="nav__link transition-colors"><i className='bx bx-conversation'></i></a></li>
+                        <li><a href="#Contactame" className="nav__link transition-colors"><i className='bx bx-conversation'></i></a></li>
                     </ul>
                 </div>
                 <div className="nav__buttons">

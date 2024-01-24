@@ -5,7 +5,7 @@ const WorkExperience = () => {
             <h2 className="text-[35px] pb-8 pt-[80px]">Mis Proyectos</h2>
             <div className="card__container">
                 <div className="card px-2 py-2 relative">
-                    <div className=" work_icon">
+                    <div className="work_icon">
                         <img src="/giftMusic.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
@@ -34,7 +34,7 @@ const WorkExperience = () => {
                                 <img src="/node.png" alt="" />
                             </div>
                         </div>
-                        <button className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</button>
+                        <a target="blanck" href="https://giftmusic-app-react.netlify.app/#/login" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@ const WorkExperience = () => {
                                 <img src="/tailwind.png" alt="" />
                             </div>
                         </div>
-                        <button className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</button>
+                        <a target="blanck" href="https://pokedex-app-vite-react.netlify.app/" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@ const WorkExperience = () => {
                                 <img src="/css.png" alt="" />
                             </div>
                         </div>
-                        <button className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</button>
+                        <a target="blanck" href="https://rickyandmortyvite-react.netlify.app/" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@ const WorkExperience = () => {
                                 <img src="/css.png" alt="" />
                             </div>
                         </div>
-                        <button className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</button>
+                        <a target="blanck" href="https://crud-vite-react.netlify.app/" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@ const WorkExperience = () => {
                                 <img src="/css.png" alt="" />
                             </div>
                         </div>
-                        <button className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</button>
+                        <a target="blanck" href="https://ecommerce-cristian-muyudumbay.netlify.app/" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
                     </div>
                 </div>
 
@@ -162,7 +162,7 @@ const WorkExperience = () => {
                                 <img src="/css.png" alt="" />
                             </div>
                         </div>
-                        <button className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</button>
+                        <a target="blanck" href="https://shimmering-toffee-8cddf0.netlify.app/" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
                     </div>
                 </div>
 

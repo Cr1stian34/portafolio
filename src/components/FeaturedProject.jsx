@@ -1,67 +1,64 @@
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const FeaturedProject = () => {
+
+  const [showModal, setShowModal] = useState(false)
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_zf2uq99', 'template_79l3dm4', form.current, '-E36zDw3KjmJu19Gl')
+      .then((result) => {
+          handleOpenModal()
+          console.log(result);
+      }, (error) => {
+          console.log(error);
+      });
+  };
+
+  const handleOpenModal = ()=>{
+    setShowModal(true)
+  }
+
+  const handleCloseModal = ()=>{
+    setShowModal(false)
+    document.getElementById("miForm").reset();
+  }
+
     return (
-        <section className="max-w-[1200px] mx-auto">
-            <article className="px-3">
-                <div className="relative">
-                    <div className="featured">
-                        <span className="text-[#9857D3]">Featured Project</span>
-                        <h1 className="text-[#CCD6F6] text-[30px]">Example Project</h1>
-                    </div>
-                    <div className="imgDecoration">
-                        <img className="rounded-2xl" src="/project1.png" alt="" />
-                    </div>
-                    <div className="cardFeatured">
-                        <p>A web app for visualizing personalized Spotify data.
-                            View your top artists, top tracks, recently played tracks,
-                            and detailed audio information about each track. Create
-                            and save new playlists of ecommended tracks based on your
-                            existing playlists and more.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-[50px] flex gap-4 mt-6 ml-5">
-                    <a href="https://github.com/Cr1stian34/rickyAndMorty" target="blank">
-                        <i className='bx bx-code-alt transition-colors'></i>
-                    </a>
-                    <a href="https://rickyandmortyvite-react.netlify.app/" target="blank">
-                        <i className='bx bxl-netlify transition-colors' ></i>
-                    </a>
-                </div>
+        <section id="Contactame" className="max-w-[1200px] flex gap-10 pt-[6rem]">
+            <article className="px-3 text-center flex justify-center flex-col gap-5">
+                <span className="contact text-[#9857D3] text-2xl">Contáctame</span>
+                <p className="contact">Envíame un correo para contactarme y así podríamos trabajar juntos</p>
             </article>
 
-            <article className="articleDos">
-                <div className="relative">
-                    <div className="feactured2">
-                        <span className="text-[#9857D3]">Featured Project</span>
-                        <h1 className="text-[#CCD6F6] text-[30px]">Example Project</h1>
+            <article className="max-w-[800px] flex justify-center">
+                <form id="miForm" className="contactoForm" ref={form} onSubmit={sendEmail}>
+                    <span className="w-[100%] text-center text-2xl pt-5">Contáctame</span>
+                    <div className="">
+                        <span>Tu nombre: </span>
+                        <input className="inputForm" type="text" name="user_name" placeholder="Tu nombre" />
                     </div>
-                    <div className="imgDecoration2">
-                        <img className="rounded-2xl" src="/project2.png" alt="" />
+                    <div className="">
+                        <span>Tu correo: </span>
+                        <input className="inputForm" type="email" name="user_email" placeholder="Tu correo" />
                     </div>
-                    <div className="direccion">
-                        <div className="cardFeatured2">
-                            <p>A web app for visualizing personalized Spotify data.
-                                View your top artists, top tracks, recently played tracks,
-                                and detailed audio information about each track. Create
-                                and save new playlists of ecommended tracks based on your
-                                existing playlists and more.
-                            </p>
-                        </div>
+                    <div className="">
+                        <span>Tu mensaje: </span>
+                        <textarea className="inputForm" type="text" name="message" placeholder="Dejame tu mensaje" />
                     </div>
-                </div>
-                <div className="containerBtn">
-                    <div className="secondBotons">
-                        <a href="https://github.com/Cr1stian34/pokedex" target="blank">
-                            <i className='bx bx-code-alt transition-colors'></i>
-                        </a>
-                        <a href="https://pokedex-app-vite-react.netlify.app/" target="blank">
-                            <i className='bx bxl-netlify transition-colors' ></i>
-                        </a>
-                    </div>
-                </div>
+                    <button onClick={handleOpenModal} className="btnForm">Enviar Mensaje</button>
+                </form>
             </article>
 
+            <article className={` ${showModal? "visible opacity-100" : "invisible opacity-0"}   fixed w-[100%] min-h-screen bg-black/60 top-0 left-0 z-10 flex items-center justify-center transition-all`}>
+                <div className="p-5 max-w-[300px] bg-slate-300 h-[200px] rounded-md flex flex-col justify-center items-center gap-5">
+                    <span className=" text-black">Correo Enviado Correctamente</span>
+                    <button onClick={handleCloseModal} className=" rounded-md bg-slate-500 px-6 py-3 hover:bg-lime-800 transition-colors">Cerrar</button>
+                </div>
+            </article>
         </section>
     )
 }
