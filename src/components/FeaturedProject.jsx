@@ -28,13 +28,13 @@ const FeaturedProject = () => {
   }
 
     return (
-        <section id="Contactame" className="max-w-[1200px] flex gap-10 pt-[6rem]">
+        <section id="Contactame" className="max-w-[1200px] flex gap-10 pt-[6rem] mediaForm">
             <article className="px-3 text-center flex justify-center flex-col gap-5">
                 <span className="contact text-[#9857D3] text-2xl">Contáctame</span>
                 <p className="contact">Envíame un correo para contactarme y así podríamos trabajar juntos</p>
             </article>
 
-            <article className="max-w-[800px] flex justify-center">
+            <article className="max-w-[100%] flex justify-center">
                 <form id="miForm" className="contactoForm" ref={form} onSubmit={sendEmail}>
                     <span className="w-[100%] text-center text-2xl pt-5">Contáctame</span>
                     <div className="">
