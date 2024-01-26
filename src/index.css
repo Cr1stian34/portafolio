@@ -10,3 +10,17 @@ img{
 *{
     font-family: 'Roboto', sans-serif;
 }
+
+::-webkit-scrollbar {
+
+    width: 8px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  
+    background: #ffe24b;
+  
+    border-radius: 5px;
+  
+  }
