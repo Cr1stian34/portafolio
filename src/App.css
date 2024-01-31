@@ -288,11 +288,13 @@ section .about{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color: var(--text-primary-color);
 }
 
 .card:hover .card__text{
     opacity: 1;
     transition: .5s;
+    color: #fff;
 }
 
 .tecnologias{
@@ -318,12 +320,8 @@ section .about{
 
 .btn__card:hover {
     background: #A362FF;
-    background: var(--color-boton-card);
-    color: #fff;
-}
-
-.btn__card:hover {
-    background: var(--color-boton-card-hover);
+    /* background: var(--color-boton-card); */
+    color: var(--text-primary-color);
 }
 
 .card__container {
