@@ -20,7 +20,7 @@ const Profile = () => {
                 <div className="w-[130px] h-[175px] mb-[2rem] imgContainer mx-auto">
                     <img src="/profile.png" alt="" />
                     <div className="estiloFondoImagen"></div>
-                    <div className="reactGira animationRotateReact"><img src="/react.png" alt="" /></div>
+                    <div className="reactGira animationRotateReact"><img src="/reactHeader.png" alt="" /></div>
                 </div>
                 <div className="z-10 pfResponsive">
                     <h2 className="text-[30px]">Ingeniero de Software / <span className="text-[#7127BA]">Desarrollador Web Full Stack</span></h2>

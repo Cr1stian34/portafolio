@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <main className={`mainContainer ${darkMode ? "" : "dark"} transition-colors`}>
+    <main className={`mainContainer ${darkMode ? "" : "dark"} transition-colors font-["Playfair Display"]`}>
       <Header changeMode={changeMode} darkMode={darkMode}/>
       <Profile />
       <AboutMe />

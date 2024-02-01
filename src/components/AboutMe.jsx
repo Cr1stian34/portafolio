@@ -1,7 +1,7 @@
 
 const AboutMe = () => {
     return (
-        <section id="SectionAboutMe" className="py-[100px] mt-10 max-w-[1000px] mx-auto text-center">
+        <section id="SectionAboutMe" className="py-[100px] mt-10 max-w-[1000px] mx-auto text-center font-['Playfair Display']">
             <div className="about max-w-[100%]">
                 <h2 className="text-[30px] ">Mas Sobre mi</h2>
                 <h2 className="text-[45px]">Ingeniero de Software</h2>
