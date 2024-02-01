@@ -4,9 +4,9 @@ const WorkExperience = () => {
         <section id="SectionWorkExperience" className="px-2 mt-[5rem] mb-[8rem] workSection relative mx-auto">
             <h2 className="text-[35px] pb-8 pt-[80px]">Mis Proyectos</h2>
             <div className="card__container">
-                <div className="card px-2 py-2 relative">
+                <div className="card px-2 py-2 relative flex">
                     <div className="work_icon">
-                        <img src="/giftMusic.png" alt="" />
+                        <img className=" rounded-md" src="/giftMusic.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
                         <h2 className="text-[25px]">Gift Music</h2>
@@ -40,7 +40,7 @@ const WorkExperience = () => {
 
                 <div className="card px-2 py-2 relative">
                     <div className=" work_icon">
-                        <img src="/pokedex.png" alt="" />
+                        <img className=" rounded-md" src="/pokedex.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
                         <h2 className="text-[25px]">Pokédex</h2>
@@ -71,7 +71,7 @@ const WorkExperience = () => {
 
                 <div className="card px-2 py-2 relative">
                     <div className=" work_icon">
-                        <img src="/ricky.png" alt="" />
+                        <img className=" rounded-md" src="/ricky.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
                         <h2 className="text-[25px]">Ricky & Morty</h2>
@@ -96,7 +96,7 @@ const WorkExperience = () => {
 
                 <div className="card px-2 py-2 relative">
                     <div className="work_icon w-[100%] h-[100%]">
-                        <img src="/crud.png" alt="" />
+                        <img className=" rounded-md" src="/crud.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
                         <h2 className="text-[25px]">Crud</h2>
@@ -121,7 +121,7 @@ const WorkExperience = () => {
 
                 <div className="card px-2 py-2 relative">
                     <div className="work_icon w-[100%] h-[100%]">
-                        <img src="/ecommerce.png" alt="" />
+                        <img className=" rounded-md" src="/ecommerce.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
                         <h2 className="text-[25px]">E-Commerce</h2>
@@ -144,7 +144,7 @@ const WorkExperience = () => {
 
                 <div className="card px-2 py-2 relative">
                     <div className="work_icon w-[100%] h-[100%]">
-                        <img src="/weather.png" alt="" />
+                        <img className=" rounded-md" src="/weather.png" alt="" />
                     </div>
                     <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
                         <h2 className="text-[25px]">Weather App</h2>
@@ -170,15 +170,15 @@ const WorkExperience = () => {
                     </div>
                 </div>
 
-                <div className="card px-2 py-2 relative">
-                    <div className="work_icon w-[100%] h-[100%]">
-                        <img src="/frases.png" alt="" />
+                <div className="card px-2 py-2 relative z-0">
+                    <div className="work_icon w-[100%] h-[100%] z-0">
+                        <img className=" z-0 rounded-md" src="/frases.png" alt="" />
                     </div>
-                    <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
-                        <h2 className="text-[25px]">Frases Random</h2>
-                        <p className="text-[15px] px-5">En esta app se creó una app la cual te recarga frases aleatorias sobre la galaxia, las tecnologías que se utilizaron para crearla son: </p>
-                        <div className="w-[100%] tecnologias mx-auto">
-                            <div className="w-[30px]">
+                    <div className=" z-0 absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
+                        <h2 className=" z-0 text-[25px]">Frases Random</h2>
+                        <p className=" z-0 text-[15px] px-5">En esta app se creó una app la cual te recarga frases aleatorias sobre la galaxia, las tecnologías que se utilizaron para crearla son: </p>
+                        <div className=" z-0 w-[100%] tecnologias mx-auto">
+                            <div className=" z-0 w-[30px]">
                                 <img src="/react.png" alt="" />
                             </div>
                             <div className="w-[30px]">

@@ -87,7 +87,7 @@ header {
     width: 100%;
     background: yellow;
     height: 1em;
-    z-index: 10;
+    /* z-index: 2; */
 
     animation: progress-grow auto linear;
     animation-timeline: scroll(root block);
@@ -240,10 +240,10 @@ i {
 
 .card {
     /* border: 3px solid green; */
-    height: auto;
+    /* height: auto; */
     border-radius: 15px;
     background: linear-gradient(110deg, var(--background-card-one) 19.95%, var(--background-card-two)  67.64%, var(--background-card-tree) 107.08%, var(--background-card-fourt) 156.61%, var(--background-card-five) 183.21%);
-    box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12); 
+    /* box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);  */
 }
 
 .card__container .card{
@@ -331,7 +331,6 @@ section .about{
     gap: 2rem;
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    z-index: 1;
 }
 
 .work_icon {
@@ -383,14 +382,14 @@ section .about{
 
 .fondoWorkContainer {
     position: absolute;
-    /* border: 3px solid green; */
+    border: 3px solid green;
     width: 100%;
     height: 100%;
     border-radius: 700px;
     background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
     top: 40px;
     left: 00%;
-    /* z-index: 0; */
+    z-index: -1;
 }
 
 .imgContainer {
