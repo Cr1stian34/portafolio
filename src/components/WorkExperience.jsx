@@ -141,6 +141,35 @@ const WorkExperience = () => {
                     </div>
                 </div>
 
+
+                <div className="card px-2 py-2 relative">
+                    <div className="work_icon w-[100%] h-[100%]">
+                        <img src="/weather.png" alt="" />
+                    </div>
+                    <div className=" absolute top-0 bg-black/70 w-[98%] h-[98%] mx-auto rounded-md card__text">
+                        <h2 className="text-[25px]">Weather App</h2>
+                        <p className="text-[15px] px-5">Se creo esta pequeña aplicación del clima en donde se muestra la temperatura del lugar del usuario que utiliza la aplicación y también se puede buscar el clima de otras ciudades del mundo. Tiene un botón que permite cambiar de grados Fahrenheit a centígrados, las tecnologías que se utilizaron para crearla son:</p>
+                        <div className="w-[100%] tecnologias mx-auto">
+                            <div className="w-[30px]">
+                                <img src="/react.png" alt="" />
+                            </div>
+                            <div className="w-[30px]">
+                                <img src="/javaScript.png" alt="" />
+                            </div>
+                            <div className="w-[30px]">
+                                <img src="/html.png" alt="" />
+                            </div>
+                            <div className="w-[30px]">
+                                <img src="/css.png" alt="" />
+                            </div>
+                            <div className="w-[30px] iconProyect">
+                                <img src="/tailwind.png" alt="" />
+                            </div>
+                        </div>
+                        <a target="blanck" href="https://cloudappreact.netlify.app/" className="btn__card px-5 mt-4 mx-auto transition-colors">Ver aplicación</a>
+                    </div>
+                </div>
+
                 <div className="card px-2 py-2 relative">
                     <div className="work_icon w-[100%] h-[100%]">
                         <img src="/frases.png" alt="" />
